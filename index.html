@@ -35,7 +35,7 @@
     <!-- Container -->
     <section class="container">
       <!-- Row -->
-      <article class="row">
+      <article class="row d-flex align-items-center">
 
         <!-- Logo -->
         <a href="/" class="col-md-2">
@@ -43,10 +43,10 @@
         </a>
 
         <!-- Search -->
-        <form action="#" class="col-md-7">
+        <form action="#" class="col-md-7 d-flex align-items-center">
           <input type="text" name="name" placeholder="Procurar Roupas aqui">
 
-          <button>
+          <button class="d-flex align-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
               viewBox="0 0 16 16">
               <path
@@ -56,7 +56,7 @@
         </form>
 
         <!-- administrativo do cliente -->
-        <ul class="col-md-3 nav">
+        <ul class="col-md-3 nav d-flex align-items-center justify-content-around">
           <li class="nav-item">
             <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -95,36 +95,37 @@
       <!-- menu -->
       <ul class="nav">
         <!-- Lista de Itens -->
-        <li class="nav-item">
+        <li class="col-md-2 nav-item d-flex align-items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
             viewBox="0 0 16 16">
             <path fill-rule="evenodd"
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
           </svg>
           Moda Feminina
+
+          <!-- Sub Menu -->
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="#">Lançamentos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Plus Size</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Moda Praia</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Acessórios</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Promoção</a>
+            </li>
+          </ul>
+          <!-- End Sub Menu -->
         </li>
 
-        <!-- Submenu -->
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            Lançamentos
-          </li>
-          <li class="nav-item">
-            Plus Size
-          </li>
-          <li class="nav-item">
-            Moda Praia
-          </li>
-          <li class="nav-item">
-            Acessórios
-          </li>
-          <li class="nav-item">
-            Promoção
-          </li>
-        </ul>
-        <!-- End Submenu -->
-
-        <li class="nav-item">
+        <!-- Lista de Itens -->
+        <li class="col-md-2 nav-item d-flex align-items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
             viewBox="0 0 16 16">
             <path fill-rule="evenodd"
@@ -134,35 +135,339 @@
         </li>
       </ul>
       <!-- End Lista de Itens -->
-
-      <!-- End Container -->
+    </section>
+    <!-- End Container -->
   </nav>
   <!-- End Menu site -->
 
-  <!-- Banners promocionais rotativos -->
-  <section id="banners-promocionais" class="container carousel slide carousel-fade">
-    <!-- imagens -->
-    <article class="carousel-inner">
-      <figure class="carousel-item active">
-        <img src="./assets/images/banner-1.jpg" class="d-block w-100" alt="Banner Promocional Lancamento Verão">
-      </figure>
-      <figure class="carousel-item">
-        <img src="./assets/images/banner-2.jpg" class="d-block w-100" alt="Banner Promocional Diversos Itens">
-      </figure>
-    </article>
+  <!-- Main -->
+  <main>
+    <!-- Banners promocionais rotativos -->
+    <section id="banners-promocionais" class="container carousel slide carousel-fade">
+      <!-- imagens -->
+      <article class="carousel-inner">
+        <figure class="carousel-item active">
+          <img src="./assets/images/banner-1.jpg" class="d-block w-100" alt="Banner Promocional Lancamento Verão">
+        </figure>
+        <figure class="carousel-item">
+          <img src="./assets/images/banner-2.jpg" class="d-block w-100" alt="Banner Promocional Diversos Itens">
+        </figure>
+      </article>
 
-    <!-- prev -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#banners-promocionais" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <!-- next -->
-    <button class="carousel-control-next" type="button" data-bs-target="#banners-promocionais" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </section>
+      <!-- prev -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#banners-promocionais" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <!-- next    -->
+      <button class="carousel-control-next" type="button" data-bs-target="#banners-promocionais" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    <!-- End Banners promocionais rotativos -->
 
+    <!-- Banners promocionas com 6 colunas -->
+    <section class="container">
+
+      <section class="row">
+        <!-- banner -->
+        <article class="col-md-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+            <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+          </svg>
+
+          <p>
+            Parcele em até<br>
+            <strong>12x sem juuros</strong>
+          </p>
+        </article>
+
+        <!-- banner -->
+        <article class="col-md-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+          </svg>
+
+          <p>
+            Entrega para<br>
+            <strong>todo o Brasil</strong>
+          </p>
+        </article>
+      </section>
+
+    </section>
+    <!-- End Banners promocionais com 6 colunas -->
+
+    <!-- Container produtos -->
+    <section class="container">
+      <!-- Title -->
+      <h1 class="text-center">Mais Populares</h1>
+
+      <!-- Listagem dos produtos -->
+      <article class="row">
+
+        <!-- Produto Cropped Rosa -->
+        <section class="produtos col-md-3">
+          <!-- Imagem do produto -->
+          <img src="./assets/images/cropped-rosa.jpg" class="img-fluid" alt="Cropped rosa">
+          <!-- Title produto -->
+          <article class="produtos-itens">
+            <h2>Cropped rosa</h2>
+            <!-- Estrelas de avaliacao -->
+            <div class="produtos-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+            </div>
+            <!-- Preco do produto -->
+            <strong class="produtuos-preco">
+              R$ 59.90
+            </strong>
+          </article>
+        </section>
+        <!-- End Produto Cropped Rosa -->
+
+        <!-- Produto Camiseta Manga Comprida  -->
+        <section class="produtos col-md-3">
+          <!-- Imagem do produto -->
+          <img src="./assets/images/camiseta-manga-comprida.jpg" class="img-fluid" alt="Camiseta Manga Comprid">
+          <!-- Title produto -->
+          <article class="produtos-itens">
+            <h2>Camiseta Manga Comprida</h2>
+            <!-- Estrelas de avaliacao -->
+            <div class="produtos-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+            </div>
+            <!-- Preco do produto -->
+            <strong class="produtos-preco">
+              R$ 79.90
+            </strong>
+          </article>
+        </section>
+        <!-- End Produto Camiseta Manga Comprida  -->
+
+        <!-- Produto Camiseta Listrada -->
+        <section class="produtos col-md-3">
+          <!-- Imagem do produto -->
+          <img src="./assets/images/camiseta-listrada.jpg" class="img-fluid" alt="Camiseta Listrada">
+          <!-- Title produto -->
+          <article class="produtos-itens">
+            <h2>Camiseta Listrada</h2>
+            <!-- Estrelas de avaliacao -->
+            <div class="produtos-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+            </div>
+            <!-- Preco do produto -->
+            <strong class="produtuos-preco">
+              R$ 49.90
+            </strong>
+          </article>
+        </section>
+        <!-- End Produto Camiseta Listrada -->
+
+        <!-- Produto Saia plisada -->
+        <section class="produtos col-md-3">
+          <!-- Imagem do produto -->
+          <img src="./assets/images/saia-plisada.jpg" class="img-fluid" alt="Saia plisada">
+          <!-- Title produto -->
+          <article class="produtos-itens">
+            <h2>Saia plisada</h2>
+            <!-- Estrelas de avaliacao -->
+            <div class="produtos-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+            </div>
+            <!-- Preco do produto -->
+            <strong class="produtuos-preco">
+              R$ 117.90
+            </strong>
+          </article>
+        </section>
+        <!-- End Produto Saia plisada -->
+      </article>
+      <!-- End listagem dos produtos -->
+
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-warning col-md-2">Veja mais</button>
+      </div>
+    </section>
+    <!-- End container produtos -->
+  </main>
+  <!-- End Main -->
+
+  <!-- Footer -->
+  <footer class="container-fluid">
+    <!-- Container -->
+    <section class="container">
+      <!-- Menus -->
+      <section class="row">
+        <!-- Atendimneto -->
+        <article class="col-md-4">
+          <h4>
+            Atendimento
+          </h4>
+
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="tel:+5511999999999">(11) 9 9999 9999</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="mailto:contato@sualoja.com.br">contato@sualoja.com.br</a>
+            </li>
+
+            <li class="nav-item">
+              Horário de atendimento on-line:<br> Segunda à sexta das 9:00 até as 17:30h
+            </li>
+          </ul>
+        </article>
+        <!-- End Atendimento -->
+
+        <!-- Acesso rápido -->
+        <article class="col-md-3">
+          <h4>
+            Acesso rápido
+          </h4>
+
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="#">Minha conta</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">Meus pedidos</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">Rastrear meus pedidos</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">Troca e devoluções</a>
+            </li>
+          </ul>
+        </article>
+        <!-- End Acesso rápido -->
+
+        <!-- Institucional -->
+        <article class="col-md-3">
+          <h4>
+            Institucional
+          </h4>
+
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="#">Sobre a loja</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">Política de privacidade</a>
+            </li>
+
+          </ul>
+        </article>
+        <!-- End Institucional -->
+
+        <!-- Mais acessadas -->
+        <article class="col-md-2">
+          <h4>
+            Mais acessadas
+          </h4>
+
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="#">Cropped rosa</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">Camiseta manga comprida</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">Camiseta listrada</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#">Saia plisada</a>
+            </li>
+          </ul>
+        </article>
+        <!-- End Mais acessadas -->
+      </section>
+      <!-- End Menus -->
+    </section>
+    <!-- End container -->
+  </footer>
+  <!-- End Footer -->
   <!-- Arquivos Bootstrap -->
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>

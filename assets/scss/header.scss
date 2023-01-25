@@ -1,0 +1,61 @@
+header {
+  background: $cor-primaria;
+  padding: 25px;
+
+  form {
+    input[type='text'] {
+      background: $branco;
+      width: 100%;
+      border-radius: 100px;
+      border: none;
+      padding: 10px 20px;
+    }
+
+    button {
+      background: none;
+      border: none;
+      position: absolute;
+      right: 490px;
+    }
+  }
+
+  ul {
+    li {
+      position: relative;
+
+      span.notificacao {
+        color: $branco;
+        background: $rosa;
+        position: absolute;
+
+
+        font-size: 10px;
+        width: 15px;
+        height: 15px;
+        top: -9px;
+        left: 1px;
+
+
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 100%;
+
+      }
+
+      a {
+        font-size: 16px;
+        font-weight: bold;
+        color: $cor-secundaria;
+
+        svg {
+          font-size: 25px;
+        }
+
+        &:hover {
+          color: initial;
+        }
+      }
+    }
+  }
+}

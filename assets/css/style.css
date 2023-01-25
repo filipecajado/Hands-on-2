@@ -1,5 +1,95 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+body {
+  color: #343A40;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+header {
+  background: #FFC107;
+  padding: 25px;
+}
+header form input[type=text] {
+  background: #FFF;
+  width: 100%;
+  border-radius: 100px;
+  border: none;
+  padding: 10px 20px;
+}
+header form button {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 490px;
+}
+header ul li {
+  position: relative;
+}
+header ul li span.notificacao {
+  color: #FFF;
+  background: #FF0F9A;
+  position: absolute;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  top: -9px;
+  left: 1px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 100%;
+}
+header ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #343A40;
+}
+header ul li a svg {
+  font-size: 25px;
+}
+header ul li a:hover {
+  color: initial;
+}
+
+nav.nav-produtos {
+  background: #343A40;
+  color: #FFF;
+}
+nav.nav-produtos a {
+  color: #FFF;
+}
+nav.nav-produtos ul.nav li {
+  position: relative;
+  padding: 10px;
+}
+nav.nav-produtos ul.nav li svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+nav.nav-produtos ul.nav li:hover {
+  background: black;
+}
+nav.nav-produtos ul.nav li:hover ul.nav {
+  display: block;
+}
+nav.nav-produtos ul.nav li ul.nav {
+  z-index: 999;
+  display: none;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  background: #343A40;
+  border-top: solid #FFC107 10px;
+  width: 100%;
+}
+nav.nav-produtos ul.nav li ul.nav li {
+  padding: 10px 25px;
+}
+
 /*!
 * Bootstrap  v5.2.3 (https://getbootstrap.com/)
 * Copyright 2011-2022 The Bootstrap Authors

@@ -15,7 +15,7 @@ header form button {
   background: none;
   border: none;
   position: absolute;
-  right: 490px;
+  right: 31%;
 }
 header ul li {
   position: relative;
@@ -125,6 +125,80 @@ nav.nav-produtos ul.nav li ul.nav li {
   font-weight: bold;
 }
 
+.produtos {
+  margin: 30px 0;
+}
+.produtos .produtos-container {
+  margin: 30px 0;
+}
+.produtos .produtos-container .produtos-itens {
+  color: #343A40;
+}
+.produtos .produtos-container .produtos-itens h2 {
+  font-size: 19px;
+  margin: 10px 0;
+}
+.produtos .produtos-container .produtos-itens .produtos-stars svg {
+  width: 10px;
+  fill: #FFC107;
+}
+.produtos .produtos-container .produtos-itens .produtos-preco {
+  font-size: 16px;
+}
+
+footer {
+  background: #343A40;
+  padding: 25px 0;
+  color: #FFF;
+}
+footer a {
+  color: #FFF;
+}
+footer a:hover {
+  color: #FFF;
+}
+footer h4 {
+  color: #FFC107;
+  font-size: 19px;
+}
+footer ul li.ellipsis {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  header form button {
+    position: absolute;
+    right: 34%;
+  }
+}
+@media (max-width: 767px) {
+  #banners-promocionais {
+    display: none;
+  }
+  header img {
+    margin-bottom: 20px;
+  }
+  header form {
+    margin: 20px 0;
+  }
+  header form button {
+    position: absolute;
+    right: 18%;
+    display: block;
+  }
+  .produtos-container img {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .banners-promocionais-statico .banners-promocionais-statico-12x p,
+  .banners-promocionais-statico .banners-promocionais-statico-todo-brasil p {
+    font-size: 14px;
+  }
+}
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -11471,6 +11545,19 @@ body {
 
 a {
   text-decoration: none !important;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+  margin: 10px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

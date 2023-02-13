@@ -1,5 +1,5 @@
 
-<h1>Hands On 2 - Página de E-commerce com bootstrap<h1>
+<h1>Hands On 2 - Página de E-commerce com bootstrap</h1>
 
 Link de Acesso ao Projeto
 

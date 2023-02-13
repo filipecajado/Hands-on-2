@@ -192,6 +192,9 @@ footer ul li.ellipsis {
   .produtos-container img {
     width: 100%;
   }
+  .produtos-preco button {
+    width: 100%;
+  }
 }
 @media (max-width: 375px) {
   .banners-promocionais-statico .banners-promocionais-statico-12x p,
@@ -199,6 +202,36 @@ footer ul li.ellipsis {
     font-size: 14px;
   }
 }
+.produtos-compra figure {
+  margin: 0px;
+}
+.produtos-compra .produtos-conteudo h1 {
+  margin: 0;
+  font-size: 32px;
+}
+.produtos-compra .produtos-conteudo p {
+  font-size: 16px;
+}
+.produtos-compra .produtos-preco .produtos-stars svg {
+  fill: #FFC107;
+  width: 16px;
+  height: 16px;
+}
+.produtos-compra .produtos-preco strong {
+  font-size: 40px;
+}
+.produtos-compra .produtos-preco form {
+  font-weight: 100;
+}
+.produtos-compra .produtos-preco form label {
+  margin: 0;
+}
+.produtos-compra .produtos-preco .produtos-stars,
+.produtos-compra .produtos-preco strong span,
+.produtos-compra .produtos-preco form {
+  font-size: 16px;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -11539,6 +11572,15 @@ fieldset:disabled .btn {
   }
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
+.breadcrumb {
+  background: initial;
+  margin: 40px 0;
+  padding: 0;
+}
+.breadcrumb a {
+  color: #FF0F9A;
+}
+
 body {
   color: #343A40;
 }
